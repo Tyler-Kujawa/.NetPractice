@@ -126,8 +126,7 @@
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Domain\Abstract\IMovieRepository.cs" />
     <Compile Include="Domain\Concrete\EfDbContext.cs" />
-    <Compile Include="Domain\Concrete\EFMovieContext.cs" />
-    <Compile Include="Domain\Concrete\MovieRepository.cs" />
+    <Compile Include="Domain\Concrete\EfMovieRepository.cs" />
     <Compile Include="Domain\Movie.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

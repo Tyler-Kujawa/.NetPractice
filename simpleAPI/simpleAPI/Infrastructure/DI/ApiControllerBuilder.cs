@@ -15,7 +15,7 @@ namespace simpleAPI.Infrastructure.DI
         public IHttpController Create(HttpRequestMessage requestMessage, HttpControllerDescriptor controllerDescriptor, Type controllerType) 
         {
             if(controllerType == typeof(MoviesController)){
-                return new MoviesController(new MovieRepository());
+                return new MoviesController(new EfMovieRepository());
             }
 
             return null;

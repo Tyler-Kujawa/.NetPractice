@@ -17,5 +17,12 @@ namespace simpleAPI.Controllers
         {
             _movieRepository = movieRepository;
         }
+
+        [HttpGet]
+        public IEnumerable<Movie> index() 
+        {
+            return _movieRepository.getAll();
+        }
+
     }
 }
